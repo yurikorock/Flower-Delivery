@@ -1,22 +1,26 @@
 import { NavLink, Outlet } from "react-router-dom";
+import css from "./HomePage.module.css"
 
 export default function HomePage() {
+    const setActive = ({ isActive }) =>
+    isActive ? `${css.shop_link} ${css.active}` : css.shop_link;
   return (
-    <div>
+    <div className={css.container}>
+    
       {/* Ліва колонка з магазинами */}
-      <div>
+      <div className={css.left_tab}>
         <h3>Shops:</h3>
-        <nav>
-          <NavLink to="flowery">Flowery Fragrant</NavLink>
-          <NavLink to="bloomwell">Bloomwell</NavLink>
-          <NavLink to="etc1">Etc1</NavLink>
-          <NavLink to="etc2">Etc2</NavLink>
-          <NavLink to="etc3">Etc3</NavLink>
+        <nav className={css.navigation}>
+          <NavLink className={setActive} to="flowery">Flowery Fragrant</NavLink>
+          <NavLink className={setActive} to="bloomwell">Bloomwell</NavLink>
+          <NavLink className={setActive} to="etc1">Etc1</NavLink>
+          <NavLink className={setActive} to="etc2">Etc2</NavLink>
+          <NavLink className={setActive} to="etc3">Etc3</NavLink>
         </nav>
       </div>
 
       {/* Права колонка з картками товарів */}
-      <main>
+      <main className={css.right_tab}>
         <Outlet />
       </main>
     </div>

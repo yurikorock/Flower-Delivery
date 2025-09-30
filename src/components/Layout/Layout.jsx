@@ -5,7 +5,7 @@ export default function Layout() {
     const setActive = ({isActive})=> isActive ? `${css.link} ${css.activeLink}` : css.link;
   return (
     <div className={css.container}>
-      <header>
+      <header className={css.header}>
         <nav className={css.navigation}>
           <NavLink className={setActive} to="/shops" >Shop</NavLink>
           <NavLink className={setActive} to="/shopping">Shopping Cart</NavLink>

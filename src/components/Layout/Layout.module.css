@@ -1,14 +1,17 @@
 .container {
 width: 1400px;
 }
+.header{
+background-color: rgb(197, 179, 179);
+}
 .navigation{
 display: flex;
 align-items: flex-start;
 gap: 20px;
 padding-top: 20px;
 padding-bottom: 20px;
-
 }
+
 .link {
   font-weight: 500;
   font-size: 20px;

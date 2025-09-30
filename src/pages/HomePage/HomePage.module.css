@@ -1,0 +1,53 @@
+.container{
+display: flex;
+flex-direction: row;
+gap: 40px;
+}
+.left_tab{
+display: flex;
+flex-direction: column;
+gap: 12px;
+align-items: center;
+width: 240px;
+}
+.navigation{
+display: flex;
+flex-direction: column;
+gap: 12px;
+align-items: center;
+}
+.shop_link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 50px;
+  background-color: #ffe4f0;   /* світло-рожевий фон */
+  color: #d6336c;              /* темно-рожевий текст */
+  font-weight: 500;
+  font-size: 16px;
+  border: 2px solid #d6336c;   /* темно-рожевий бордер */
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop_link:hover {
+  background-color: #d6336c;   /* темно-рожевий фон при наведенні */
+  color: #ffffff;               /* білий текст */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.shop_link:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Активна кнопка магазину */
+.shop_link.active {
+  background-color: #ffb3c6;   /* трохи світліший рожевий */
+  color: #ffffff;
+  border-color: #d6336c;
+}
