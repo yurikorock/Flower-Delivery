@@ -9,12 +9,17 @@ flex-direction: column;
 gap: 12px;
 align-items: center;
 width: 240px;
+
+border: 2px solid #d6336c;  
+  border-radius: 8px;
 }
 .navigation{
 display: flex;
 flex-direction: column;
 gap: 12px;
 align-items: center;
+
+margin-bottom: 24px;
 }
 .shop_link {
   display: inline-flex;
@@ -50,4 +55,12 @@ align-items: center;
   background-color: #ffb3c6;   /* трохи світліший рожевий */
   color: #ffffff;
   border-color: #d6336c;
+}
+
+
+/* Right TAB Cards of shops */
+.right_tab{
+ border: 2px solid #d6336c;   /* темно-рожевий бордер */
+  border-radius: 8px;
+  width: 100%;
 }
